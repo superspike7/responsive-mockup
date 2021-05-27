@@ -18,6 +18,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
   box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -121,5 +123,155 @@ table {
 }
 
 .gallery {
-  
+  padding: 30px 8px;
+}
+
+.gallery .container .articles {
+  display: flex;
+  height: 85.97vw;
+  width: 100%;
+  margin-bottom: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory; 
+}
+
+.gallery .box {
+  background-color: #333;
+  background:  center;
+  background-image: linear-gradient(to top, #000 10%, rgba(255, 255, 255, 0)), url(img/gallery-item.webp);
+  margin: 0 4px;
+  flex: 0 0 85.97vw;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.gallery .box .text {
+  bottom: 0;
+}
+
+.gallery .box .subtitle {
+  margin-bottom: .25rem;
+  font-size: .75rem; 
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: .08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.gallery .box .title {
+  margin-bottom: .25rem;
+  font-size: 1.25em;
+  letter-spacing: -.2px;
+}
+
+.gallery .box:first-child {
+  margin-left: 0;
+}
+
+.gallery .box:last-child {
+  margin-right: 0;
+}
+
+/* to square flex items */
+
+.gallery .box:before {
+    content:'';
+    float:left;
+    padding-top:100%;
+}
+
+.gallery .banner {
+  max-width: 748px;
+  height: 196px;
+  background: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(img/banner-bg.webp);
+  background-size: 150%;
+  background-position: top;
+  color: #fff;
+}
+
+.gallery .banner .title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: .25rem;
+  font-size: 1.20em;
+  letter-spacing: -.2px;
+}
+
+.gallery .banner .btn {
+  font-size: 13px;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  height: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 1em;
+  box-shadow: inset 0 0 0 1px #fff;
+  padding: 1em 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-style: none;
+}
+
+/* popular articles */
+
+.articles {
+  width: 100%;
+  padding: 3em 8px;
+  background: #f7f8f8;
+  margin: 40px 0;
+}
+
+.articles .title{
+  color: #a7aab2;
+  text-align: center;
+  letter-spacing: -0.1em;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.articles .container {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+}
+
+.articles .container .article {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.articles .container .article .number {
+  font-size: 2em;
+  color:  rgba(204,0,153,0.9);
+}
+
+.articles .container .article .title {
+  font-size: 1em;
+  text-align: left;
+  padding: 0 16px;
+  flex: 1;
+}
+
+
+.articles .container .article .title a {
+  color: #000;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 500;
 }
