@@ -345,3 +345,50 @@ table {
   padding: 1em 0;
   border-radius: 50px;
 }
+
+/* explore section */
+
+.explore {
+  background: #eee;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.explore h1 {
+  color: #000;
+}
+
+.explore .container {
+  display: flex;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  margin: 2rem 0.5em;
+}
+
+.explore .box {
+  background: #4d28a1;
+  margin-right: 0.5em;
+}
+
+.explore .box a {
+  width: 216px;
+  height: 256px;
+  display: block;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.explore .box a .desc {
+  font-weight: normal;
+  padding: 0 1rem;
+  font-size: .7em;
+  margin-bottom: 1.5em;
+}
+
+.explore a > * {
+  padding: 1em 0;
+}
