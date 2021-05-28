@@ -392,3 +392,63 @@ table {
 .explore a > * {
   padding: 1em 0;
 }
+
+/* news letter section */
+
+.newsletter {
+  background: rgb(112, 14, 223);
+  padding: 64px;
+}
+
+.newsletter .container {
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.newsletter h1 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.newsletter .form form{
+  display: flex;
+  height: 2.5rem;
+}
+
+.newsletter .form input{
+  flex: 1;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  border-left: none;
+  padding: 1em;
+}
+
+.newsletter .form button {
+  flex-basis: 20%; 
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  color: #888;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #fff;
+  border-radius: 0 10px 10px 0;
+}
+
+.newsletter ul {
+  display: flex;
+  height: 32px;
+  justify-content: center;
+}
+
+.newsletter li {
+  padding: .35em; 
+}
+
+.newsletter li i{
+  font-size: 2em;
+  color: rgba(226, 226, 226, 0.8);
+}
