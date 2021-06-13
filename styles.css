@@ -452,3 +452,104 @@ table {
   font-size: 2em;
   color: rgba(226, 226, 226, 0.8);
 }
+
+/* videos */
+
+.videos {
+  padding: 2rem 0;
+}
+
+.videos h1 {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+
+.videos .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.videos .featured-video {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.videos .featured-video .video {
+  background: #193;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.videos .youtube-player {
+  position: absolute;
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background-position: 50% 50%;
+  object-position: 50% 50%;
+}
+
+.featured-video .text {
+  padding: 1em;
+}
+
+.featured-video .text .title {
+  font-weight: bold;
+}
+
+.featured-video .text .date {
+  font-weight: lighter;
+  font-size: 0.8em;
+  margin-top: .8em;
+}
+
+.videos .scroll-container {
+  padding: .5rem 1rem;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row;
+  overflow-x: auto;
+}
+
+
+.videos .scroller {
+  display: flex;
+}
+
+.videos .scroll-container .box{
+  margin-left: 1em;
+  height: 221px;
+  width: 208px;
+}
+
+
+.videos .scroller .box .thumbnail {
+  background: #aaa;
+  height: 52.951%;
+  position: relative;
+}
+
+.videos .scroller .box .thumbnail img{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-size: cover;
+  object-fit: cover;
+}
+
+
+.videos .scroll-container .box .title {
+  margin-top: 1em;  
+  color: #000;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: bold;
+}
