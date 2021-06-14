@@ -50,8 +50,7 @@ table {
 .navbar .container {
   width: 100%;
   height: 56px;
-  background: #fff;
-  box-shadow: #000;
+  background-color: rgb(247,248,248);
   display: flex;
   align-items: center;
   position: fixed;
@@ -66,6 +65,7 @@ table {
   justify-content: center;
   align-items: center;
 }
+
 
 .navbar .toggle .grid-box {
   display: grid;
@@ -91,6 +91,68 @@ table {
   height: 100%;
   width: 100%;
 }
+
+
+@media (min-width: 1024px){
+  .navbar .container .toggle {
+    display: none;
+  }
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar .logo {
+    margin-left: 1em;
+  }
+
+  .navbar .links li a {
+    color: rgb(80,86,102);
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 1em;
+    text-transform: uppercase;
+    font-size: .875rem;
+  }
+
+  .navbar .links li a:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .navbar .links {
+    display: flex;
+  }
+  
+  .navbar .mail {
+    margin-right: 1em;
+  }
+
+  .navbar .mail i {
+    color: rgba(80,86,102, .4);
+    font-size: 1.3em; 
+  }
+
+  .navbar .container a.logo svg > * {
+    fill: #000;
+  }
+
+  .navbar .container a.logo svg {
+    cursor: pointer;
+  }
+
+  .navbar .container a.logo svg > * {
+    transition: fill .5s ease-in-out;
+  }
+
+  .navbar .container a.logo svg:hover > * {
+    fill: #c09;
+  }
+
+}
+
 
 /* header */
 
@@ -124,6 +186,12 @@ table {
   font-size: 18px;
   letter-spacing: -0.025em;
 }
+
+@media (min-width: 1024px) {
+
+}
+
+/* gallery section */
 
 .gallery {
   padding: 30px 8px;
@@ -176,6 +244,10 @@ table {
 
 .gallery .box:last-child {
   margin-right: 0;
+}
+
+@media (min-width: 1024px) {
+
 }
 
 /* to square flex items */
@@ -752,3 +824,5 @@ table {
   font-size: .875rem;
   line-height: 1.75;
 }
+
+/* desktop laytout */
