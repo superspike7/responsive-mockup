@@ -54,6 +54,8 @@ table {
   box-shadow: #000;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 .navbar .container .toggle {
@@ -457,6 +459,8 @@ table {
 
 .videos {
   padding: 2rem 0;
+  background: rgb(247,248,248);
+  padding-bottom: 64px;
 }
 
 .videos h1 {
@@ -552,4 +556,106 @@ table {
   font-size: 14px;
   line-height: 1.5em;
   font-weight: bold;
+}
+
+/* career section */
+
+.career {
+  padding: 6em 0 2em;
+}
+
+.career .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.career .box-right >* {
+  color: #000;
+}
+
+.career .box-right {
+  text-align: center;
+  margin-bottom: 2rem;
+} 
+
+.career .box-right .subtitle {
+  font-family: Shentox,sans-serif;
+  color: rgb(80,86,102);
+  margin-bottom: .8em; 
+}
+
+.career .box-right .title {
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: -.025em;
+}
+
+.career .box-right .desc {
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  color: rgb(80,86,102);
+  line-height: 1.5rem;
+}
+
+
+.career .box-right .btn {
+  display: inline-block;
+  background: rgb(0,221,222);
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  overflow: hidden;
+  border-style: none;
+  border-radius: .25rem;
+  font-size: 13px;
+  letter-spacing: .025em;
+  line-height: 48px;
+}
+
+.career .box-left {
+  height: 336px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.career .box-left .role {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.career .box-left .role >* {
+  color: #000;
+}
+
+.career .box-left .icon {
+  width: 96px; 
+  height: 96px;
+}
+
+.career .box-left .role .title {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.career .companies {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.career .companies .company {
+  flex-basis: 50%;
+  max-width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
